@@ -11,6 +11,7 @@ Group:		X11/Applications
 Source0:	%{name}-%{version}.tar.gz
 # Source0-md5:	dc005d97ba8d3b1637d5a39ff5f7d075
 Patch0:		%{name}-includes.patch
+Patch1:		%{name}-desktop.patch
 URL:		http://apps.intra-links.com/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -35,6 +36,7 @@ KDE SubVersion.
 %prep
 %setup -q
 %patch0 -p0
+%patch1 -p0
 
 %build
 cp -f /usr/share/automake/config.sub admin
