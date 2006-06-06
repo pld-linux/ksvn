@@ -1,0 +1,17 @@
+--- src/ksvn.desktop	2006-03-01 18:30:09.000000000 +0100
++++ src/ksvn.desktop-pld	2006-06-06 11:33:07.579432224 +0200
+@@ -1,9 +1,11 @@
+ [Desktop Entry]
+ Encoding=UTF-8
+ Name=ksvn
+-Name[xx]=xxksvnxx
++Comment=A Subversion client for KDE
++Comment[fr]=Un client pour SubVersion
++Comment[pl]=Klient Subversion dla KDE
+ Exec=ksvn
+ Icon=ksvn
+ Type=Application
+-Comment=Client for SubVersion
+-Comment[fr]=Un client pour SubVersion
++Terminal=false
++Categories=Qt;KDE;Development;RevisionControl;
