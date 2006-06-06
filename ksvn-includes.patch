@@ -1,0 +1,9 @@
+--- src/Makefile.am	2006-05-03 09:38:52.000000000 +0200
++++ src/Makefile.am-pld	2006-06-06 09:28:41.370380792 +0200
+@@ -1,5 +1,5 @@
+ # set the include path for X, qt and KDE
+-INCLUDES = $(all_includes) -I/usr/include/apr-0 -I/usr/include/apr-1 -I/usr/include/subversion-1
++INCLUDES = $(all_includes) -I/usr/include/apr -I/usr/include/apr-utils -I/usr/include/subversion-1
+ 
+ # these are the headers for your project
+ noinst_HEADERS = ksvncommitdlg.h ksvnupdatedlg.h ksvnstatusdlg.h ksvnfile.h \
