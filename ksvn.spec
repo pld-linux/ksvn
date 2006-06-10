@@ -22,7 +22,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 A new client for KDE that looks like tortoiseSVN. It can be used from
-konqueror context menu. It replace the standard KDE SubVersion menu.
+Konqueror context menu. It replace the standard KDE SubVersion menu.
 
 %description -l de
 Ein neuer SVN Klient für KDE der wie tortoiseSVN aussieht. Es kann
@@ -30,7 +30,7 @@ durch das Konqueror Kontextmenu benutzt werden.
 
 %description -l pl
 Nowy klient SVN dla KDE, który wygl±da jak tortoiseSVN. Mo¿e byæ
-u¿ywany z menu kontekstowego konquerora. Zastêpuje standardowe menu
+u¿ywany z menu kontekstowego Konquerora. Zastêpuje standardowe menu
 KDE SubVersion.
 
 %prep
@@ -57,7 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	kde_htmldir=%{_kdedocdir} \
 	kde_libs_htmldir=%{_kdedocdir} \
-	kdelnkdir=%{_desktopdir} \
+	shelldesktopdir=%{_desktopdir}/kde
 
 %find_lang %{name} --with-kde
 
@@ -67,8 +67,8 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %{name}.lang
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
-%{_iconsdir}/*/*/apps/%{name}.png
 %{_datadir}/apps/%{name}
-%{_datadir}/applnk/Utilities/ksvn.desktop
 %{_datadir}/apps/konqueror/servicemenus/subversion.desktop
 %{_datadir}/apps/konqueror/servicemenus/subversion_toplevel.desktop
+%{_desktopdir}/kde/ksvn.desktop
+%{_iconsdir}/*/*/apps/%{name}.png
