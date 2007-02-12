@@ -1,8 +1,8 @@
 %bcond_with	debug	# enable debugging
 
 Summary:	ksvn - SVN client for KDE
-Summary(de):	ksvn - ein SVN Klient für KDE
-Summary(pl):	ksvn - Klient SVN dla KDE
+Summary(de.UTF-8):   ksvn - ein SVN Klient fÃ¼r KDE
+Summary(pl.UTF-8):   ksvn - Klient SVN dla KDE
 Name:		ksvn
 Version:	0.3
 Release:	1
@@ -24,13 +24,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 A new client for KDE that looks like tortoiseSVN. It can be used from
 Konqueror context menu. It replace the standard KDE SubVersion menu.
 
-%description -l de
-Ein neuer SVN Klient für KDE der wie tortoiseSVN aussieht. Es kann
+%description -l de.UTF-8
+Ein neuer SVN Klient fÃ¼r KDE der wie tortoiseSVN aussieht. Es kann
 durch das Konqueror Kontextmenu benutzt werden.
 
-%description -l pl
-Nowy klient SVN dla KDE, który wygl±da jak tortoiseSVN. Mo¿e byæ
-u¿ywany z menu kontekstowego Konquerora. Zastêpuje standardowe menu
+%description -l pl.UTF-8
+Nowy klient SVN dla KDE, ktÃ³ry wyglÄ…da jak tortoiseSVN. MoÅ¼e byÄ‡
+uÅ¼ywany z menu kontekstowego Konquerora. ZastÄ™puje standardowe menu
 KDE SubVersion.
 
 %prep
