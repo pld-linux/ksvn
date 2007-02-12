@@ -1,8 +1,8 @@
 %bcond_with	debug	# enable debugging
 
 Summary:	ksvn - SVN client for KDE
-Summary(de.UTF-8):   ksvn - ein SVN Klient für KDE
-Summary(pl.UTF-8):   ksvn - Klient SVN dla KDE
+Summary(de.UTF-8):	ksvn - ein SVN Klient für KDE
+Summary(pl.UTF-8):	ksvn - Klient SVN dla KDE
 Name:		ksvn
 Version:	0.3
 Release:	1
